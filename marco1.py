@@ -1,8 +1,7 @@
-q = input("Vad är ditt namn? ")
-q = int(input(f"Hej, välkommen {q}! Hur gammal är du? "))
-if q < 16:
-    print("Meh, du kan bli äldre.")
-elif q > 16:
-    print("Oj, du måste vara erfaren!")
+name = input("Vad är ditt namn? ")
+print(f"Hej {name}!")
+age = int(input("Hur gammal är du? "))
+if age > 16:
+    print("Du måste vara erfaren")
 else:
-    print("Du har en perfekt ålder!")
+    print("Du kan bli äldre") if age < 16 else print("Du har en perfekt ålder")
